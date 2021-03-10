@@ -1,0 +1,20 @@
+:root {
+  --primary: #aceace;
+}
+$primary: var(--primary);
+
+.box1 {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: palevioletred;
+}
+.box2 {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: $primary;
+}
+.box3 {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(112, 114, 216);
+}
