@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Header } from './Header';
-import './page.scss';
+import { Header } from '../Header';
+import styles from './Page.module.scss';
 
 export interface PageProps {
   user?: {};
@@ -49,8 +49,8 @@ export const Page: React.FC<PageProps> = ({ user, onLogin, onLogout, onCreateAcc
         </a>
         .
       </p>
-      <div className="tip-wrapper">
-        <span className="tip">Tip</span> Adjust the width of the canvas with the{' '}
+      <div className={styles.tipWrapper}>
+        <span className={styles.tip}>Tip</span> Adjust the width of the canvas with the{' '}
         <svg width="10" height="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fillRule="evenodd">
             <path

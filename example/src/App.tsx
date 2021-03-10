@@ -1,10 +1,9 @@
 import React from 'react'
 
-import { ExampleComponent } from 'b-atomic-library'
-import 'b-atomic-library/dist/index.css'
+import { Button } from 'b-atomic-library'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <Button primary={true} label="Button" />
 }
 
 export default App

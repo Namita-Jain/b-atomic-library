@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Button } from './Button';
-import './header.scss';
+import { Button } from '../Button';
+import styles from './Header.module.scss';
 
 export interface HeaderProps {
   user?: {};
@@ -12,7 +12,7 @@ export interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <header>
-    <div className="wrapper">
+    <div className={styles.wrapper}>
       <div>
         <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fillRule="evenodd">
@@ -36,10 +36,10 @@ export const Header: React.FC<HeaderProps> = ({ user, onLogin, onLogout, onCreat
         {user ? (
           <Button size="small" onClick={onLogout} label="Log out" />
         ) : (
-          <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
-          </>
+            <React.Fragment>
+                <Button size="small" onClick={onLogin} label="Log in" />
+                <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+            </React.Fragment>
         )}
       </div>
     </div>
