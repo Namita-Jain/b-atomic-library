@@ -28,17 +28,6 @@ const App = () => {
           isThemeLoading(false)
         })
     )
-    // fetch(`http://localhost:5000/themes?name=${theme}`)
-    //   .then((data) => {
-    //     applyCssVars(JSON.parse(data))
-    //   })
-    //   .catch((err) => {
-    //     // do some fallback styling
-    //     console.log(err)
-    //   })
-    //   .finally(() => {
-    //     isThemeLoading(false)
-    //   })
   }, [theme])
   return themeLoading ? (
     <div className='all-center'>
@@ -53,6 +42,15 @@ const App = () => {
         <option>walgreens</option>
       </select>
       <CustomButton type='_CustomButton-module__bwell-btns__primary__1Lqty'>
+        Button
+      </CustomButton>
+      <CustomButton type='_CustomButton-module__bwell-btns__secondary__3GbB9'>
+        Button
+      </CustomButton>
+      <CustomButton type='_CustomButton-module__bwell-btns__primary-small__3QBJO'>
+        Button
+      </CustomButton>
+      <CustomButton type='_CustomButton-module__bwell-btns__secondary__3GbB9 _CustomButton-module__bwell-btns__primary--danger-outline__11Hbk'>
         Button
       </CustomButton>
     </div>

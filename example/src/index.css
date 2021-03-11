@@ -51,7 +51,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: var(--test-color); */
+  background-color: #ddd;
 }
 
 code {
@@ -63,4 +63,9 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.all-center button{
+  margin: 10px auto;
 }
