@@ -1,0 +1,240 @@
+@import '../../styles/styles';
+
+.bwell-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__primary {
+      @include big-btn-config();
+      background-color: $palette-btn-primary;
+      color: $palette-btn-primary-text;
+
+      &--danger {
+          background-color: $palette-red;
+      }
+      &--danger-outline {
+          border: 1px solid $palette-red;
+          color: $palette-red;
+          background-color: $palette-white;
+          &:hover,
+          &:active,
+          &:focus {
+              outline: 0;
+              background-color: $palette-red;
+              color: $palette-white;
+              border: none;
+          }
+          @include disable-hover($palette-red, $palette-white) {
+              border: 1px solid $palette-red;
+          }
+          &:focus:enabled {
+              @include box-shadow(1px 4px 9px rgba($black, 0.25));
+              border: none;
+          }
+          &:active:enabled {
+              @include box-shadow(none);
+              background-color: $palette-red;
+              color: $palette-white;
+              opacity: $palette-btn-primary-opacity;
+          }
+      }
+
+      &--outlined {
+          background-color: $palette-white;
+          color: $palette-btn-primary;
+          border: 2px solid $palette-btn-primary;
+      }
+      &--icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          i {
+              margin-right: 10px;
+              font-size: 1.8rem;
+              &.icon-bg {
+                  font-size: 30px;
+              }
+          }
+      }
+      &--yellow {
+          padding: 0 12px;
+          background-color: $palette-secondary;
+          color: $palette-primaryBase;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+          outline: 0;
+          background-color: $palette-btn-primary-hover;
+          color: $palette-btn-primary-text;
+          border: none;
+      }
+      &:focus:enabled {
+          @include box-shadow(1px 4px 9px rgba($black, 0.25));
+          border: none;
+      }
+      @include disable-hover($palette-btn-primary-text, $palette-btn-primary);
+      &:active:enabled {
+          @include box-shadow(none);
+          background-color: $palette-btn-primary-active;
+          color: $palette-btn-primary-active-text;
+          opacity: $palette-btn-primary-opacity;
+      }
+      @include disabled() {
+          background-color: $palette-btn-primary-disabled;
+          color: $palette-btn-primary-disabled-text;
+          cursor: not-allowed;
+          opacity: 1;
+      }
+      @include focus-on-tab;
+  }
+  &__cta {
+      border-radius: $ctaButton-borderRadius;
+      &--icon {
+          display: flex;
+          align-items: center;
+          justify-self: flex-start;
+          i {
+              margin-right: 10px;
+              font-size: 2.1rem;
+          }
+      }
+  }
+  &__secondary {
+      @include big-btn-config();
+      border: 1px solid $palette-btn-secondary-border;
+      background-color: $palette-btn-secondary;
+      color: $palette-btn-secondary-text;
+      &--danger {
+          color: $palette-redish;
+      }
+      &:hover,
+      &:active,
+      &:focus {
+          outline: 0;
+          border-color: $palette-btn-secondary-hover;
+          color: $palette-btn-secondary-text-hover;
+      }
+      @include disable-hover($palette-btn-secondary-text, $palette-btn-secondary) {
+          border-color: $palette-btn-secondary-border !important;
+      };
+      &:focus:enabled {
+          @include box-shadow(1px 4px 9px rgba($black, 0.25));
+          border-color: $palette-white;
+      }
+      &:active:enabled {
+          @include box-shadow(none);
+          background-color: $palette-btn-secondary-active;
+          color: $palette-btn-secondary-active-text;
+          opacity: $palette-btn-secondary-opacity;
+      }
+      @include disabled() {
+          border-color: $palette-btn-secondary-disabled-border;
+          color: $palette-btn-secondary-disabled-text;
+          cursor: not-allowed;
+          opacity: 1;
+      }
+      @include focus-on-tab;
+  }
+  &__primary-small {
+      @include small-btn-config();
+      background-color: $palette-btn-primary-sm;
+      color: $palette-btn-primary-sm-text;
+      &--icon {
+          display: flex;
+          align-items: center;
+          justify-self: flex-start;
+          i {
+              margin-right: 10px;
+              font-size: 1.4rem;
+          }
+      }
+      &--yellow {
+          @include font-bold(1rem, 1.2rem);
+          max-width: 255px;
+          background-color: $palette-secondary;
+          color: $palette-primaryBase;
+      }
+      &:hover,
+      &:active,
+      &:focus {
+          outline: 0;
+          background-color: $palette-btn-primary-sm-hover;
+          color: $palette-btn-primary-sm-text;
+          border: none;
+      }
+      @include disable-hover($palette-btn-primary-sm-text, $palette-btn-primary-sm);
+      &:focus, &:focus:enabled {
+          @include box-shadow(1px 4px 9px rgba($black, 0.25));
+          border: none;
+      }
+      &:active, &:active:enabled {
+          @include box-shadow(none);
+          background-color: $palette-btn-primary-sm-active;
+          color: $palette-btn-primary-sm-active-text;
+          opacity: $palette-btn-primary-sm-opacity;
+      }
+      @include disabled() {
+          background-color: $palette-btn-primary-sm-disabled;
+          color: $palette-btn-primary-sm-disabled-text;
+          cursor: not-allowed;
+          opacity: 1;
+      }
+      @include focus-on-tab;
+  }
+  &__secondary-small {
+      @include small-btn-config();
+      border: 2px solid $palette-btn-secondary-sm;
+      background-color: $palette-white;
+      color: $palette-btn-secondary-sm-text;
+      &:hover,
+      &:active,
+      &:focus {
+          outline: 0;
+          border-color: $palette-btn-secondary-sm-hover;
+          color: $palette-btn-secondary-sm-hover-text;
+      }
+      @include disable-hover($palette-btn-secondary-sm-text, $palette-white) {
+          border-color: $palette-btn-secondary-sm !important;
+      };
+      &:focus, &:focus:enabled {
+          @include box-shadow(1px 4px 9px rgba($black, 0.25));
+          border-color: $palette-btn-secondary-sm-hover-text;
+      }
+      &:active, &:active:enabled {
+          @include box-shadow(none);
+          background-color: $palette-btn-secondary-sm-active-bg;
+          color: $palette-btn-secondary-sm-active-text;
+          border-color: $palette-btn-secondary-sm-active-text;
+          opacity: $palette-btn-secondary-sm-opacity;
+      }
+      @include disabled() {
+          border-color: $palette-btn-secondary-sm-disabled;
+          color: $palette-btn-secondary-sm-disabled-text;
+          cursor: not-allowed;
+          opacity: 1;
+      }
+      @include focus-on-tab;
+  }
+  &--shrink-on-resize {
+      @include phone(max-width) {
+          min-width: 125px;
+      }
+  }
+  &--min-w-auto {
+      min-width: auto;
+  }
+  &--w-290 {
+      width: 290px;
+  }
+  &--min-content {
+      min-width: min-content;
+      padding: 10px 20px;
+  }
+  &--max-content {
+      min-width: max-content;
+      padding: 10px 20px;
+  }
+}

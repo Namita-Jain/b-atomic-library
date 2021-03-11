@@ -1,0 +1,96 @@
+@mixin big-btn-config() {
+  @include font-bold(1.3rem, 1.7rem);
+  border-radius: $button-borderRadius;
+  min-height: 55px;
+  min-width: 250px;
+  width: 250px;
+  padding: 0 20px;
+  border: none;
+  word-break: break-word;
+}
+
+/// @description Disable Persistent Hover on touch devices
+/// @param {variable name} $color - Text color of button
+///  @param {variable name} $bg-color - Background Color of button
+@mixin disable-hover($color: '', $bg-color: '')
+{
+  &.disable-hover {
+    &:hover, &:focus {
+      @if $color != '' {
+        color: $color;
+      }
+      @if $bg-color != '' {
+        background-color: $bg-color;
+      }
+      box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      @content;
+    }
+  }
+}
+
+@mixin box-shadow($shadow, $important: false) {
+  box-shadow: $shadow if-important($important);
+  -webkit-box-shadow: $shadow if-important($important);
+  -moz-box-shadow: $shadow if-important($important);
+}
+
+// Disabled state
+@mixin disabled() {
+  &:disabled, &[disabled] {
+    @content;
+    // Hover Remains Disable for disabled buttons
+    @include disable-hover {
+      @content;
+    }
+  }
+}
+
+/// Adds focus when element is traversed via keyboard. Do not show focus outline when element is clicked via mouse
+/// @param {String} $color - color of the outline. Default color is $form-field-focus
+@mixin focus-on-tab($color: $button-hover) {
+  &:focus:not(.focus-visible) {
+    outline: none !important;
+  }
+  &.focus-visible {
+    border: 1px solid $color;
+  }
+}
+
+@mixin small-btn-config() {
+  @include font-regular(1.15rem, 1.5rem);
+  border-radius: $button-borderRadius;
+  min-height: 36px;
+  min-width: 185px;
+  max-width: 250px;
+  padding: 0 20px;
+  border: none;
+  word-break: break-word;
+}
+
+/// Media query for tablet-phone: 480px
+/// @param {String} $width - break point type - Can be "max-width" or "min-width"
+@mixin phone($width: 'min-width') {
+  @media screen and (#{$width}: $phone - get-offset($width)) {
+    @content;
+  }
+}
+
+@mixin font-bold($size: $font-size-base, $lineHeight: $line-height-base) {
+  font-family: 'Apertura Bol', 'Apertura Reg', sans-serif;
+  @include font-shorthand($size,$lineHeight);
+}
+
+@mixin font-shorthand($size: $font-size-base,$lineHeight: $line-height-base, $weight: normal, $style:normal) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+  // font-style: $style;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin font-regular($size: $font-size-base, $lineHeight: $line-height-base) {
+  font-family: 'Apertura Ita', 'Apertura Reg', sans-serif;
+  @include font-shorthand($size,$lineHeight);
+}

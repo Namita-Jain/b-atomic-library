@@ -1,0 +1,611 @@
+$palette-btn-primary:  var(--palette-btn-primary);
+$palette-btn-primary-text:  var(--palette-btn-primary-text);
+$palette-btn-primary-hover:  var(--palette-btn-primary-hover);
+$palette-btn-primary-active:  var(--palette-btn-primary-active);
+$palette-btn-primary-active-text:  var(--palette-btn-primary-active-text);
+$palette-btn-primary-opacity:  var(--palette-btn-primary-opacity);
+$palette-btn-primary-disabled:  var(--palette-btn-primary-disabled);
+$palette-btn-primary-disabled-text:  var(--palette-btn-primary-disabled-text);
+$palette-btn-secondary-border:  var(--palette-btn-secondary-border);
+$palette-btn-secondary:  var(--palette-btn-secondary);
+$palette-btn-secondary-text-hover:  var(--palette-btn-secondary-text-hover);
+$palette-btn-secondary-text:  var(--palette-btn-secondary-text);
+$palette-btn-secondary-hover:  var(--palette-btn-secondary-hover);
+$palette-btn-secondary-active:  var(--palette-btn-secondary-active);
+$palette-btn-secondary-active-text:  var(--palette-btn-secondary-active-text);
+$palette-btn-secondary-opacity:  var(--palette-btn-secondary-opacity);
+$palette-btn-secondary-disabled:  var(--palette-btn-secondary-disabled);
+$palette-btn-secondary-disabled-border:  var(--palette-btn-secondary-disabled-border);
+$palette-btn-secondary-disabled-text:  var(--palette-btn-secondary-disabled-text);
+$palette-btn-primary-sm:  var(--palette-btn-primary-sm);
+$palette-btn-primary-sm-text:  var(--palette-btn-primary-sm-text);
+$palette-btn-primary-sm-hover:  var(--palette-btn-primary-sm-hover);
+$palette-btn-primary-sm-active:  var(--palette-btn-primary-sm-active);
+$palette-btn-primary-sm-active-text:  var(--palette-btn-primary-sm-active-text);
+$palette-btn-primary-sm-opacity:  var(--palette-btn-primary-sm-opacity);
+$palette-btn-primary-sm-disabled:  var(--palette-btn-primary-sm-disabled);
+$palette-btn-primary-sm-disabled-text:  var(--palette-btn-primary-sm-disabled-text);
+$palette-btn-secondary-sm:  var(--palette-btn-secondary-sm);
+$palette-btn-secondary-sm-text:  var(--palette-btn-secondary-sm-text);
+$palette-btn-secondary-sm-hover:  var(--palette-btn-secondary-sm-hover);
+$palette-btn-secondary-sm-hover-text:  var(--palette-btn-secondary-sm-hover-text);
+$palette-btn-secondary-sm-active:  var(--palette-btn-secondary-sm-active);
+$palette-btn-secondary-sm-active-bg:  var(--palette-btn-secondary-sm-active-bg);
+$palette-btn-secondary-sm-active-text:  var(--palette-btn-secondary-sm-active-text);
+$palette-btn-secondary-sm-opacity:  var(--palette-btn-secondary-sm-opacity);
+$palette-btn-secondary-sm-disabled:  var(--palette-btn-secondary-sm-disabled);
+$palette-btn-secondary-sm-disabled-text:  var(--palette-btn-secondary-sm-disabled-text);
+$palette-red: var(--palette-red);
+$palette-white: var(--palette-white);
+$palette-secondary: var(--palette-secondary);
+$palette-primaryBase: var(--palette-primaryBase);
+$button-borderRadius: var(--button-borderRadius);
+
+$black: #000;
+$button-hover: #000;
+
+:root {
+  --palette-btn-primary: #002664;
+  --palette-btn-primary-text: #ffffff;
+  --palette-btn-primary-hover: #007DAC;
+  --palette-btn-primary-active: #FCD900;
+  --palette-btn-primary-active-text: #002664;
+  --palette-btn-primary-opacity: 1;
+  --palette-btn-primary-disabled: #e0e0e0;
+  --palette-btn-primary-disabled-text: #6f6f6f;
+  --palette-btn-secondary-border: #002664;
+  --palette-btn-secondary: transparent;
+  --palette-btn-secondary-text-hover: #007DAC;
+  --palette-btn-secondary-text: #002664;
+  --palette-btn-secondary-hover: #007DAC;
+  --palette-btn-secondary-active: #002664;
+  --palette-btn-secondary-active-text: #FCD900;
+  --palette-btn-secondary-opacity: 1;
+  --palette-btn-secondary-disabled: transparent;
+  --palette-btn-secondary-disabled-border: #e0e0e0;
+  --palette-btn-secondary-disabled-text: #6f6f6f;
+  --palette-btn-primary-sm: #007DAC;
+  --palette-btn-primary-sm-text: #ffffff;
+  --palette-btn-primary-sm-hover: #002664;
+  --palette-btn-primary-sm-active: #FCD900;
+  --palette-btn-primary-sm-active-text: #002664;
+  --palette-btn-primary-sm-opacity: 1;
+  --palette-btn-primary-sm-disabled: #e0e0e0;
+  --palette-btn-primary-sm-disabled-text: #6f6f6f;
+  --palette-btn-secondary-sm: #007DAC;
+  --palette-btn-secondary-sm-text: #007DAC;
+  --palette-btn-secondary-sm-hover: #002664;
+  --palette-btn-secondary-sm-hover-text: #002664;
+  --palette-btn-secondary-sm-active: #002664;
+  --palette-btn-secondary-sm-active-bg: #002664;
+  --palette-btn-secondary-sm-active-text: #FCD900;
+  --palette-btn-secondary-sm-opacity: 1;
+  --palette-btn-secondary-sm-disabled: #6f6f6f;
+  --palette-btn-secondary-sm-disabled-text: #6f6f6f;
+  --palette-red: red;
+  --palette-white: #fff;
+  --palette-secondary: #FCD900;
+  --palette-primaryBase: #2589b4; 
+  --button-borderRadius: 5px;
+}
+
+$desktop-header-height:           80px;
+
+
+/*=============================================
+*   screen width
+=============================================*/
+
+$phone-landscape: 576px;
+$phone: 480px;
+$phone-sm: 360px;
+$tablet-md: 576px;
+$tablet-portrait: 768px;
+$tablet-landscape: 992px;
+$desktop: 1200px;
+$desktop-hd: 1400px;
+
+$font-size-base:              1rem !default;
+$font-weight-base:            400 !default;
+$line-height-base:            1.5 !default;
+
+// This needs to be fixed in future
+$theme-images-base-url:       "http://localhost:3000/themes/altrua";
+$theme-login-bg:              url("http://localhost:3000//login_bg.jpg");
+
+//-----------Custom variables will goes here
+$white:                                 #FFF;
+$black:                                 #000;
+$theme-dark-color:                      #003166;
+$theme-color:                           #003166;
+$theme-color-form:                      #1f2772;
+$theme-primary-text:                    #4d5758 !default;
+$theme-secondary-text:                  #939b9b !default;
+$primary-background:                    #f6f5f3 !default;
+$primary-light:                         #E6F0F4;
+$journey-level-background:              #003166;
+$family-member-details-color:           #666562;
+$registered-msg-color:                  #424035;
+$challenge-icon-background:             #00a3e4;
+$heartbeat-color:                       #DE4977;
+$appointment-details:                   #a6a6a6;
+$support-description:                   #a6a6a6;
+$datepicker-controls-border:            #a6a6a6;
+$datepicker-header-color:               #a8a7a7;
+$theme-text:                            #4D4D4D;
+$points-block:                          #8ed1ba !default;
+$theme-text-light:                      #cbcbcb;
+$secondary-text:                        #939b9b;
+$primary-border:                        #D9D9D7;
+$primary-border-dark:                   #d3d3d3;
+$secondary-border:                      #D8D8D6;
+$secondary-border-dark:                 #d7d7d5;
+$border-dark:                           #666562;
+$primary-button:                        #003166;
+$primary-button-lighter:                #0678ad;
+$onboarding-btn-background:             #F8F8F8;
+$placeholders-background:               #f6f5f3;
+$prescription-detail-main:              #333333;
+$family-member-table-border:            #F0EEE9;
+$search-input-border:                   #CCC;
+$prescription-pricing-list-border:      #CCC;
+$slider-border:                         #DAD9D6;
+$progress-border:                       #DAD9D6;
+$login-background-color:                #FFFFFF;
+$prescription-detail-text:              #7C7A79;
+$tribe-label:                           #A0A0A0;
+$modal-light-text:                      #A0A0A0;
+$questionaire-text:                     #A0A0A0;
+$quiz-ques-color:                       #807F7C;
+$alert-color:                           #E84941;
+$error-background:                      #db524b;
+$error-color:                           #fff;
+$questionaire-doctor-background:        #8AC23E;
+$labs-abnormal:                         #F34941;
+$labs-normal:                           #39b54a;
+$moderate-color:                        #fbb03c;
+$btn-orange:                            #FAB03C;
+$refill-warning-background:             #fff424;
+$onboarding-background:                 #0757ab;
+$onboarding-btn-color:                  #0757ab;
+$onboarding-input-background:           #417ebd;
+$onboarding-label:                      #ffffff;
+$progress-tracker-background:           #4E8ED3;
+$prescription-name:                     #4E7FFF;
+$theme-heading:                         #014772;
+$theme-heading-background:              #004772;
+$doc-list-highlighter:                  #03A89C;
+$price-info-head:                       #417ebd;
+$profile-tab-heading:                   #d8d8d6;
+$find-doc-progress-tracker-background:  #d8d8d6;
+$score-pts:                             #8ed1ba;
+$rewards-theme:                         #8ed1ba;
+$main-background:                       #f9f9f9;
+$history-indicator-background:          #dfdbd3;
+$placeholder-map-color:                 #d2d0cb;
+$device-error-background:               #3a3a3a;
+$allergy-severity-high:                 #f04648;
+$allergy-severity-moderate:             #ccba26;
+$genomics-detail:                       #868582;
+$theme-button:                          #003166;
+$dashboard-header:                      #014772;
+
+$family-tree-icon-background:           #143253;
+$family-tree-empty-icon-background:     #e98315;
+$family-tree-female-icon:               #d566dc;
+$onboarding-placeholder:                #ffffff;
+$onboarding-input-color:                #ffffff;
+$login-input-background:                transparent;
+$login-input-background-chrome:         none;
+$login-input:                           #FFF;
+$nav-select-background:                 #013454;
+$nav-sub-item-border:                   #013454;
+$genomics-action-color:                 #29abe2;
+$bwell-block:                           rgb(38, 40, 41);
+$menu-bwell:                            #A8A8A8;
+$onboarding-padding:                    97px 35px 50px;
+$login-background-img:                  url("#{$theme-images-base-url}/login-background.png") no-repeat;
+$doctor-img:                            url("#{$theme-images-base-url}/facilities/map-doctor-bg.svg") no-repeat;
+$pharmacy-map-img:                      url("#{$theme-images-base-url}/facilities/pharmacy-marker.svg") no-repeat;
+$facility-map-img:                      url("#{$theme-images-base-url}/facilities/facilities-blue-background.svg") no-repeat;
+$icon-facility-background:              url("#{$theme-images-base-url}/facilities/map-facility-bg.svg") no-repeat;
+$loading-svg:                           "loading.svg";
+$login-remember-checkbox:               "checkbox-sprite-login.png";
+$checkbox-sprite:                       "checkbox-sprite-altrua.png";
+$sad-icon:                              "sad-icon.svg";
+$happy-icon:                            "happy-icon.svg";
+$toggle-btn-on:                        #84BD00 !default;
+$toggle-btn-off:                       #f1f1f1 !default;
+$toggle-off-border:                    #eaeaea !default;
+$search-list-color:                    #333333 !default;
+$switch-label-color:                   #4c5d70 !default;
+$allergy-list-background:              #f0eee9 !default;
+$arrow-state:                          #DAD9D6 !default;
+$question-num-tracker:                 #003166 !default;
+$language-switcher-border-color:           #006495;
+$language-switcher-text:                   #006495;
+$language-switcher-border-width:       1px;
+
+
+//Stats Variables
+$steps-color:                           #8CC63F;
+$bloodpresure-color:                    #F34941;
+$heartrate-color:                       #FBB03B;
+$sleep-color:                           #534761;
+$calories-color:                        #00a99d;
+$weight-color:                          #29abe2;
+$emergency-color:                       #ed3f42;
+$biking-color:                          #845ba8;
+$jogging-color:                         #c63f9e;
+$swimming-color:                        #f0c519;
+$water-consumption-color:               #0000ff;
+$bmi-color:                             #dd581d;
+$dollar-color:                          #2489b3;
+$pharmacy-color:                        #3fb5c6;
+$glucose-color:                         #2684ac;
+$fat-color:                             #2f4a6c;
+$height-color:                          #8769ab;
+$temperature-color:                     #A40089;
+$modal-congrats-color:                  #28394b !default;
+
+//bootstrap select scss
+$color-red-error: rgb(185, 74, 72);
+$color-grey-arrow: rgba(204, 204, 204, 0.2);
+
+$zindex-select-dropdown: 1035; // must be lower than a modal background (1040) but higher than the fixed navbar (1030)
+
+//Health Journey page variable
+$total-stage: 5;
+$total-level: 10;
+
+
+// New Varibale added by Kiwitech
+
+$pco-card-background:                           #523178 !default;
+$pco-card-color:                                #1c1f2a !default;
+$arrow-state:                                   #DAD9D6 !default;
+$notification-count-color:                      #F34941 !default;
+$trinity-text-color:                            #696d73;
+$trinity-green-color:                           #62a945;
+$drug-detail-background:                        #DAD9D6 !default;
+$generic-block:                                 #fab03c !default;
+$refill-warning-color:                          #003166 !default;
+$drug-text:                                     #7f7e7b !default;
+$onboarding-success-text:           			#ffffff !default;
+$onboarding-text:                               #ffffff !default;
+$checkbox-terms:                                #464646 !default;
+$signup-btn:									#003166;
+$signup-text:									#003166;
+$onboard-login-btn:								#8dc63f;
+$payment-method-text:                           #868582;
+$claim-message:                                 #95989a;
+$progress-bg:                                   #1ABC9C;
+$click-link-color:                              #00B8D4;
+$check-sprite-green:                            "checkbox-sprite-green.svg";
+$challenge-description-color:                   #858582 !default;
+
+
+$week-first-day:                                #b6b6b4 !default;
+$secondary-theme-color:                         #84BD00 !default;
+$theme-logout:                                  #84BD00 !default;
+$image-background-color:            			#e7e5e2 !default;
+$loader-color:                                  #84BD00 !default;
+$audio-player-control:                          #9b96c4 !default;
+// New medical records screen
+$tundora:					                    #4a4a4a;
+$pampas:					                    #f6f5f3;
+$dusy-gray:					                    #9b9b9b;
+$white-ice:					                    #f2fdfb;
+$reward-inner-background:	                    #4a90e2;
+$dusty-gray:		                            #979797;
+$bay-of-many:				                    #003166 !default;
+$paragraph-text:                                #4A4A4A !default;
+$new-error-color:                               #FF1E23 !default;
+$checklist-checkbox-color:                      #9DC44D !default;
+$challenge-toast-color:                         #4a90e2 !default;
+$location-marker-color:                         #f5a623 !default;
+$provider-background-color:                     #4aa59c;
+$sky-blue:                                      #4abbe2;
+$questionaire-caret:                            #a7a6a4 !default;
+$positive-result:                               #4caf50;
+$audio-player-control:                          #9b96c4 !default;
+$location-preferred-color:                      #01b08d !default;
+$alert-bg:                                      #fbf426;
+$medical-records-tabs-background:               #003166;
+$progress-graph-line:                           #cecedd !default;
+$slate-loader-color:                            #00daaf !default;
+$lab-search-background:                         #e1e2f4;
+$account-switcher-btn-border:                   #5389c3;
+$reward-background:                             #3d5064;
+
+// Trinity colors
+$trinity-gray-color:                #c3c3c3;
+$trinity-wellness-success:          #8dc63f !default;
+$dark-blue:                         #123f73;
+$gray-dark:                         #343a40 !default;
+$login-background:                  #E1E2F5 !default;
+
+// Loader Color
+$loader-color:                      #2E3586 !default;
+$login-loader-color:                #ffffff !default;
+$onboarding-loader-color:           #ffffff !default;
+
+// Calendar colors
+$current-month-day-text:            #95989A;
+$month-border:                      #95989A;
+$different-month:                   #e4e4e4;
+$event-empty-container:             #bfbebb;
+$calendar-light-blue-icon:          #00aeef;
+$calendar-green-icon:               #3cb875;
+$calendar-light-green-icon:         #8cc63f;
+$calendar-medication-icon:          #8f89c2;
+$calendar-male-icon:                #bfbebb;
+$calendar-event-placeholder:        #9da0a1;
+
+// notification colors
+$notification-green-color:          #4caf50;
+$notification-orange-color:         #ff9800;
+$notification-blue-color:           #00b8d4;
+$notification-red-color:            #ff1e23;
+$notification-yellow-color:         #fff424;
+
+
+$icon-heart-color:                  #D50000;
+$doctor-detail-text-color:          #37373c;
+$action-chip-bg-color:              #868e96;
+$action-active-chip-bg-color:       #00daaf;
+
+// Missing variables
+$journey-extrnal-button-color:        #3F9EEA;
+$incorrect-text:                      #ff0000;
+$tribe-control-text:                  #b1b1b3;
+$login-small-text:                    #9FA1A1;
+$app-download-icon-color:             #1b1b1b;
+$app-download-border:                 #acacac;
+$prescription-pricing-heading:        #556;
+$pricing-currency:                    #393;
+$price-extra-text:                    #e0e0ef;
+$icon-delete-doctor:                  #F14941;
+$doctor-icon-background:              #ebe3cb;
+$btn-disable-background:              #eee;
+$btn-disable-border:                  #333;
+$share-access-text:                   #868582;
+$drug-background:                     #f7ebd8;
+$stats-bottom-text:                   #c1272d;
+$null-message-text:                   #a1a1a1;
+$gray-button-background:              #707070;
+$labs-arrow-green:                    #50e3c2;
+$modal-heading-para-text:             #6e6e70;
+$labs-filter-label:                   #8e8e93;
+$labs-filter-icon:                    #C7C7CC;
+$credit-card-modal-text:              #585549;
+$complete-modal-text:                 #bfbebb;
+$grey-text:                           #808080;
+$green:                               #008000;
+$payment-option-stripes:              #003166;
+$no-result-heartbeat-icon:            #478789;
+$blue-icon-background:                #2589b4;
+$info-icon-background:                #2369B3;
+$appt-status-text:                    #2E7DC6;
+$order-kit-icon:                      #3cb875;
+$profile-photo-text:                  #a7a5a1;
+$family-tree-label-three:             #67717c;
+$star-active-color:                   #f9ed31;
+$info-icon-fetched:                   #5ab963;
+$info-icon-marker:                    #afb0b1;
+$assessment-text:                     #2b2b2b;
+$assessment-inprogress:               #dac620;
+$assessment-complete:                 #78be20;
+$device-image-background:             #ddd;
+$secondary-input-border:              #bebdbb;
+$secondary-input-background:          #f8f5f0;
+$payment-form-focus-border:           #66afe9;
+$notification-remove-text:            #cecdcb;
+$sucess-message-background:           #dff0d8;
+$sucess-message-text:                 #3c763d;
+$subscribe-benefits-background:       #ececec;
+$onboarding-video-text:               #585549;
+$warning-message-text:                #FBF14F;
+$audio-media-background:              #f4f4f4;
+$audio-time-text:                     #f4f4f4;
+$dosage-background:                   #f7f7f7;
+$audio-time:                          #898a8b;
+$quiz-info-grey-bg:                   #f5f5f2;
+$doctor-profile-background:           #e1e2f4;
+$heart-loader-background:             #9DC34D;
+$progress-bar-shadow-background:      #e2e1e0;
+$progress-bar-shadow-inner:           #bdbcbc;
+$disabled-count:                      #c3c2be;
+$bottom-banner-background:            #0d0d0d;
+$progress-tracker-border:             #bbb;
+$stats-setting-border:                #c8c7cc;
+$add-card-border:                     #ddd;
+
+$support-search-border:               #ddd;
+$main-title-color:                    #003166;
+$secondary-title-color:               #003166;
+$breadcrums-color:                    #003166;
+$breadcrums-border:                   #979797;
+$doctor-card-color:                   #00a99d;
+$profile-tracker-dark:                #337a93;
+$profile-tracker-light:               #4abbe2;
+$journey-post-background:             #f8f9fa;
+$failed-background:                   #fdf2f2;
+$labs-disclaimer-bg:                  #efeff4;
+$table-header-background:             #f1efeb;
+$face-id-color:                       #EC6D90;
+$slider-disable-color:                #D5D1CB;
+$content-loader-background:           #f6f7f8;
+$tab-background:                      #003166;
+$tab-background-active:               #013454;
+$tab-background-hover:                #025386;
+$tab-active-background:               $tab-background-active;
+$kids-branding-text-color:            #313738;
+$banner-img-bg:                       #f3f3f3;
+$button-disable-color:                #ced4da;
+$search-list-color:                   #2e2e2e;
+$list-border:                         #dfdfdd;
+$banner-bg-green:                     #04b592;
+$banner-bg-yellow:                    #f4cc20;
+$progress-bar-green:                  #076673;
+$progress-bar-brown:                  #8D5D07;
+$progress-bar-brown-active:           #F59D00;
+$white-overlay:                       rgba($white, 0.15);
+$floating-field-border:               #e9e6e1;
+$black-overlay:                       rgba($black, 0.5);
+$claim-bar-graph-color:               #FBB038;
+$pricing-text-primary:                $main-title-color;
+$pricing-text-secondary:              $main-title-color;
+$pricing-text-secondary-label:        $theme-text;
+$touch-id-disclaimer:                 #74818D;
+$alert-red:                           #ec3a48;
+$black-tone:                          #170204;
+$touch-id-secondary:                  #676d73;
+$touch-id-tertiary:                   #556272;
+$overview-bg-color:                   #666573;
+$banner-yellow:                       #fff9af;
+$gray-86:                             #DBDBDB;
+$onboarding-secondary-color:          #00DAAF;
+$banner-title-color:                  $main-title-color;
+$malibu:                              #80bdff;
+$picton-blue:                         #51CBEE;
+$azure-radiance:                      rgba(0, 123, 255, 0.25);
+$theme-heading-color:                 $theme-color;
+$modal-title-color:                   $main-title-color;
+$accent-text:                         #006BA6;
+$catskill-white:                      #EEF6F7;
+$floating-field-bg:                   #F7F7FA;
+
+$gray-86:                             #DBDBDB;
+$crayola:                             #ffaa1d;
+$faux-mustard:                        #ffd858;
+$faux-tera-cotta:                     #6C60ED;
+$banner-title-color:                  $main-title-color;
+$loblolly:                            #b8c2cb;
+$action-chip-network:                 #b8c2cb;
+
+// New onboarding and login flow colors
+$onboarding-gradient:                 linear-gradient(to bottom, transparent, $theme-color 100%);
+$login-button-background:             #00daaf;
+$login-text-color:                    #fff;
+$login-form-controls-color:           #fff;
+$link-error-color:                    #e5ff1e;
+$selected-range:                      #90ffe9;
+$selected-range:                      #90ffe9;
+$nav-menu-item:                       #cbcbcb;
+$placeholder-color:                   #6c757d;
+
+// New health tribe flow color
+$permission-warning-background:       #FFF7B4;
+$green-color:                         #00B390;
+$blue-color:                          #2E3586;
+$dark-green:                          #098B71;
+$gray-tint:                           #e9ecef;
+
+$nav-dark-color:                      #013454;
+$nav-light-color:                     #006495;
+$gray-light:                          #BDBDBD;
+$gray-medium:                         #6F6F6F;
+$black-tint:                          #4f4f4f;
+$ghost-white:                         #F7F7FA;
+
+// Insurance provider colors
+$iris-blue:                           #00DAAF;
+$dim-grey:                            #6F6F6F;
+$grey88:                              #E0E0E0;
+$red:                                 #FF0000;
+$tutu:                                #FFE6E6;
+$grey95:                              #F2F2F2;
+$grey31:                              #4F4F4F;
+$gray74:                              #BDBDBD;
+$light-gray:                          #D5D3D1;
+$cornflower-blue:                     #6C60ED;
+$green-dark:                          #90B73E;
+$cyan-dark:                           #009EC3;
+$blue-light:                          #E6F2F6;
+$black-tint:                          #6F6F6F;
+$gray-light:                          #BDBDBD;
+$card-empty-background:               #F7F7FA;
+$light-slate-grey:                    #868E96;
+$solitude:                            #E9ECEF;
+$gray2:                               #4F4F4F;
+$purple-heart:                        #6727B7;
+$bismark:                             #437B87;
+$catskill-white:                      #EEF6F7;
+$dodger-blue:                         #2F80ED;
+$curious-blue:                        #2D9CDB;
+$delta-grey:                          #899198;
+$white-smoke:                         #F2F2F2;
+$silver:                              #C4C4C4;
+$pale-cyan:                           #F5FEFF;
+$tone:                                #437887;
+$medical-record-btn:                  $sky-blue;
+$doc-contact-color:                   $calories-color;
+$map-dummy:                           #d7e8e2;
+$icon-xbtn:                          #003166;
+$charcoal:                            #444444;
+$speech-red:                          #df0000;
+$dark-cyan:                           #008369;
+$crayola:                             #FFAA1D;
+$ghost-white:                         #F7F7FA;
+$onboarding-heading:                  $primary-button;
+$form-field-focus:                    #51cbee;
+$moderate-cyan:                       #437B87;
+
+// bw-datepicker
+$bw-datepicker-grey:                  #F7F7FA;
+$bw-datepicker-dark-grey:             #6F6F6F;
+
+// view records table
+$alternate-row-bg:                    #F7F7FA;
+
+// connected health
+$connected-health-data-point-color:   #008369;
+$connected-health-danger-red:         #DF0000;
+$grey-solid:                          #828282;
+$button-hover:                        #006BA6;
+$charcoal:                            #444444;
+
+// Rewards systems
+$vivid-yellow:                        #FFCA27;
+$white-smoke:                         #F0F0F0;
+$dull-yellow:                         #DEB330;
+$matter-horn:                         #4c4c4c;
+$achievements-bg-gray:                #E5E5E5;
+$light-grey:                          #D7D7D7;
+$badge-name:                           $prescription-detail-main;
+$progress-bar-bg:                      $onboarding-btn-background;
+$blue-pill:                           #007ABE;
+$saffron:                             #F6C42A;
+$shamrock:                            #D58D21;
+$suva-grey:                           #8D8D8D;
+$silver:                              #bababa;
+$support-heading:                     $share-access-text;
+$support-link:                        $theme-primary-text;
+$support-top-banner:                  #2e2e2e;
+$theme-button:                        #003166;
+$new-theme-button:                    #003166;
+$right-panel-background:              #191D4D;
+$new-theme-color:                     $theme-color;
+$white-smoke:                         #f8f8f8;
+$moss-green:                          #B6D7A8;
+$vanilla-ice:                         #F4CCCC;
+$dim-gray:                            #6E6E6E;
+$steps-bg:                            #013454;
+$steps-text:                            $white;
+// Searh bar
+$search-bar-bg:                         #E6F0F4;
+$search-bar-icons:                      #006495;
+$search-bar-text:                       $charcoal;
+
+// scheduling appointments
+$accent-text:                        #47CDA0;
+$menu-active-border:                 $white;
+$nav-select-color:                   $white;
+$nav-sub-color:                      rgba(0, 0, 0, 0);
+$brand-color:                        #013454;
+$brand-text:                         $white;
+
+// Extras
+$ctaButton-borderRadius: 5px;
+$palette-redish: red;

@@ -13,5 +13,5 @@
 //   return <button className={styles.box2}>{text}</button>
 // }
 
-import { Button, Header, Page, Input } from './components';
-export { Button, Header, Page, Input };
+import { Button, Header, Page, Input, CustomButton } from './components'
+export { Button, Header, Page, Input, CustomButton }

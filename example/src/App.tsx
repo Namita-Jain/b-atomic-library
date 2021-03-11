@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import 'b-atomic-library/dist/index.modern.css'
+import { CustomButton } from 'b-atomic-library'
 
 // same css issue as before.
 // import "../node_modules/b-atomic-library/dist/index.modern.css"
@@ -50,8 +52,10 @@ const App = () => {
         <option>thedacare</option>
         <option>walgreens</option>
       </select>
+      <CustomButton type='_CustomButton-module__bwell-btns__primary__1Lqty'>
+        Button
+      </CustomButton>
     </div>
   )
 }
-
 export default App
