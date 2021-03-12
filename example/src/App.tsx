@@ -45,32 +45,32 @@ const App = () => {
       </div>
       <div className="buttons">
         <div>
-          <CustomButton type='bwell-btns__primary'>
+          <CustomButton classList={['bwell-btns__primary']}>
             Primary
           </CustomButton>
         </div>
         <div>
-          <CustomButton type='bwell-btns__primary--outlined'>
+          <CustomButton classList={['bwell-btns__primary' ,'bwell-btns__primary--outlined']}>
             Primary Outlined
           </CustomButton>
         </div>
         <div>
-          <CustomButton type='bwell-btns__secondary'>
+          <CustomButton classList={['bwell-btns__secondary']}>
             Secondary
           </CustomButton>
         </div>
         <div>
-        <CustomButton type='bwell-btns__primary-small'>
+        <CustomButton classList={['bwell-btns__primary' ,'bwell-btns__primary-small']}>
           Primary small
         </CustomButton>
         </div>
         <div>
-          <CustomButton type='bwell-btns__primary--danger'>
+          <CustomButton classList={['bwell-btns__primary' ,'bwell-btns__primary--danger']}>
             Primary Danger
           </CustomButton>
         </div>
         <div>
-          <CustomButton type='bwell-btns__secondary-small'>
+          <CustomButton classList={['bwell-btns__secondary', 'bwell-btns__secondary-small']}>
             Secondary small
           </CustomButton>
         </div>
