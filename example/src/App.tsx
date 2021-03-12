@@ -34,26 +34,48 @@ const App = () => {
       <h2>please wait while assets load</h2>
     </div>
   ) : (
-    <div className='all-center'>
-      <select value={theme} onChange={(ev) => setTheme(ev.target.value)}>
-        <option>altrua</option>
-        <option>medstar</option>
-        <option>thedacare</option>
-        <option>walgreens</option>
-      </select>
-      <CustomButton type='_CustomButton-module__bwell-btns__primary__1Lqty'>
-        Button
-      </CustomButton>
-      <CustomButton type='_CustomButton-module__bwell-btns__secondary__3GbB9'>
-        Button
-      </CustomButton>
-      <CustomButton type='_CustomButton-module__bwell-btns__primary-small__3QBJO'>
-        Button
-      </CustomButton>
-      <CustomButton type='_CustomButton-module__bwell-btns__secondary__3GbB9 _CustomButton-module__bwell-btns__primary--danger-outline__11Hbk'>
-        Button
-      </CustomButton>
-    </div>
+    <>
+      <div className='all-center'>
+        <select value={theme} onChange={(ev) => setTheme(ev.target.value)}>
+          <option>altrua</option>
+          <option>medstar</option>
+          <option>thedacare</option>
+          <option>walgreens</option>
+        </select>
+      </div>
+      <div className="buttons">
+        <div>
+          <CustomButton type='bwell-btns__primary'>
+            Primary
+          </CustomButton>
+        </div>
+        <div>
+          <CustomButton type='bwell-btns__primary--outlined'>
+            Primary Outlined
+          </CustomButton>
+        </div>
+        <div>
+          <CustomButton type='bwell-btns__secondary'>
+            Secondary
+          </CustomButton>
+        </div>
+        <div>
+        <CustomButton type='bwell-btns__primary-small'>
+          Primary small
+        </CustomButton>
+        </div>
+        <div>
+          <CustomButton type='bwell-btns__primary--danger'>
+            Primary Danger
+          </CustomButton>
+        </div>
+        <div>
+          <CustomButton type='bwell-btns__secondary-small'>
+            Secondary small
+          </CustomButton>
+        </div>
+      </div>
+    </>
   )
 }
 export default App

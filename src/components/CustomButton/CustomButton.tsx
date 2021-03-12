@@ -1,5 +1,5 @@
 import React from 'react'
-import './CustomButton.module.scss'
+import styles from './CustomButton.module.scss'
 
 export interface ButtonProps {
   type: string;
@@ -11,8 +11,9 @@ export const CustomButton: React.FC<ButtonProps> = ({
   handleClick,
   children
 }) => {
+  console.log(type, styles[type]);
   return (
-    <button className={type} onClick={handleClick}>
+    <button className={styles[type]} onClick={handleClick}>
       {children}
     </button>
   )

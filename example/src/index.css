@@ -63,9 +63,19 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
-.all-center button{
-  margin: 10px auto;
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10rem 5rem;
+}
+
+.buttons > div {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
 }
