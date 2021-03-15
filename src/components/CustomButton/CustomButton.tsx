@@ -1,15 +1,15 @@
 import React from 'react'
 import styles from './CustomButton.module.scss'
 
-export interface ButtonProps {
-  classList: string[]
+interface ButtonProps {
+  classList?: string[]
   id: string
   handleClick?: () => void
   isDisabled?: boolean
 }
 
 export const CustomButton: React.FC<ButtonProps> = ({
-  classList,
+  classList = [],
   handleClick,
   isDisabled = false,
   id,

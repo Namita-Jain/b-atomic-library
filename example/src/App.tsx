@@ -39,7 +39,7 @@ const App = () => {
       <div className="buttons">
         <div>
           <CustomButton
-            classList={['bwell-btns__primary']} 
+            classList={['bwell-btns', 'bwell-btns__primary']} 
             id="btn-1"
           >
             Primary
@@ -47,7 +47,7 @@ const App = () => {
         </div>
         <div>
           <CustomButton
-            classList={['bwell-btns__primary', 'bwell-btns__primary--outlined']}
+            classList={['bwell-btns', 'bwell-btns__primary', 'bwell-btns__primary--outlined']}
             id="btn-2"
           >
             Primary Outlined
@@ -55,7 +55,7 @@ const App = () => {
         </div>
         <div>
           <CustomButton
-            classList={['bwell-btns__secondary']}
+            classList={['bwell-btns', 'bwell-btns__secondary']}
             id="btn-3"
           >
             Secondary
@@ -63,7 +63,7 @@ const App = () => {
         </div>
         <div>
           <CustomButton
-            classList={['bwell-btns__primary', 'bwell-btns__primary-small']}
+            classList={['bwell-btns', 'bwell-btns__primary', 'bwell-btns__primary-small']}
             id="btn-4"
           >
             Primary small
@@ -71,7 +71,7 @@ const App = () => {
         </div>
         <div>
           <CustomButton
-            classList={['bwell-btns__primary', 'bwell-btns__primary--danger']}
+            classList={['bwell-btns', 'bwell-btns__primary', 'bwell-btns__primary--danger']}
             id="btn-5"
           >
             Primary Danger
@@ -79,7 +79,7 @@ const App = () => {
         </div>
         <div>
           <CustomButton
-            classList={['bwell-btns__secondary', 'bwell-btns__secondary-small']}
+            classList={['bwell-btns', 'bwell-btns__secondary', 'bwell-btns__secondary-small']}
             id="btn-6"
           >
             Secondary small
@@ -87,7 +87,7 @@ const App = () => {
         </div>
         <div>
           <CustomButton
-            classList={['bwell-btns__primary']}
+            classList={['bwell-btns', 'bwell-btns__primary']}
             id="btn-7"
             isDisabled
           >
@@ -104,7 +104,7 @@ const App = () => {
         </div>
         <div>
           <CustomButton
-            classList={['bwell-btns__secondary']}
+            classList={['bwell-btns', 'bwell-btns__secondary']}
             id="btn-9"
             isDisabled
           >
