@@ -1,2 +1,2 @@
-import { Button, Header, Page, Input, CustomButton } from './components'
-export { Button, Header, Page, Input, CustomButton }
+import { CustomButton } from './components'
+export { CustomButton }
