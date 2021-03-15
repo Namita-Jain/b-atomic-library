@@ -1,3 +1,48 @@
+/* loaded themes do not bring any new variables(atleast not at the moment). We already have
+ variables sitting in this file and themes just update them */
+
+/* default button values, these were picked from Bwell/themes/default.scss */
+:root {
+  --test-color:#aceace;
+  --palette-btn-primary: #2e3586;
+  --palette-btn-primary-text: #ffffff;
+  --palette-btn-primary-hover: #6c60ed;
+  --palette-btn-primary-active: #9890f2;
+  --palette-btn-primary-active-text: #ffffff;
+  --palette-btn-primary-opacity: 1;
+  --palette-btn-primary-disabled: #e0e0e0;
+  --palette-btn-primary-disabled-text: #6f6f6f;
+  --palette-btn-secondary-border: transparent;
+  --palette-btn-secondary: transparent;
+  --palette-btn-secondary-text-hover: #6c60ed;
+  --palette-btn-secondary-text: #2e3586;
+  --palette-btn-secondary-hover: transparent;
+  --palette-btn-secondary-active: transparent;
+  --palette-btn-secondary-active-text: #9890f2;
+  --palette-btn-secondary-opacity: 1;
+  --palette-btn-secondary-disabled: transparent;
+  --palette-btn-secondary-disabled-border: transparent;
+  --palette-btn-secondary-disabled-text: #6f6f6f;
+  --palette-btn-primary-sm: #2e3586;
+  --palette-btn-primary-sm-text: #ffffff;
+  --palette-btn-primary-sm-hover: #6c60ed;
+  --palette-btn-primary-sm-active: #9890f2;
+  --palette-btn-primary-sm-active-text: #ffffff;
+  --palette-btn-primary-sm-opacity: 1;
+  --palette-btn-primary-sm-disabled: #e0e0e0;
+  --palette-btn-primary-sm-disabled-text: #6f6f6f;
+  --palette-btn-secondary-sm: #2e3586;
+  --palette-btn-secondary-sm-text: #2e3586;
+  --palette-btn-secondary-sm-hover: #6c60ed;
+  --palette-btn-secondary-sm-hover-text: #6c60ed;
+  --palette-btn-secondary-sm-active: #9890f2;
+  --palette-btn-secondary-sm-active-bg: transparent;
+  --palette-btn-secondary-sm-active-text: #9890f2;
+  --palette-btn-secondary-sm-opacity: 1;
+  --palette-btn-secondary-sm-disabled: #6f6f6f;
+  --palette-btn-secondary-sm-disabled-text: #6f6f6f;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,7 +53,38 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-center select {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 7rem 5rem;
+}
+
+.buttons > div {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.custom-btn-1 {
+  border-radius: 10px;
+  background-color: yellow;
+  color: black;
+  font-size: 1.75rem;
+  border: 0;
+  padding: 5px 15px;
 }
