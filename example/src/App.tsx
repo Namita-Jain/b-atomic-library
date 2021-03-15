@@ -2,12 +2,6 @@ import React, { useState, useEffect } from 'react'
 import 'b-atomic-library/dist/index.modern.css'
 import { CustomButton } from 'b-atomic-library'
 
-// same css issue as before.
-// import "../node_modules/b-atomic-library/dist/index.modern.css"
-
-// the Input is a test component expored from b-atomic-library
-// import {Input} from "b-atomic-library"
-
 import { applyCssVars } from './utils'
 
 const App = () => {
@@ -18,7 +12,6 @@ const App = () => {
       response
         .json()
         .then((data) => {
-          console.log(data)
           applyCssVars(data[0].styles)
         })
         .catch(() => {
@@ -50,7 +43,7 @@ const App = () => {
           </CustomButton>
         </div>
         <div>
-          <CustomButton classList={['bwell-btns__primary' ,'bwell-btns__primary--outlined']}>
+          <CustomButton classList={['bwell-btns__primary', 'bwell-btns__primary--outlined']}>
             Primary Outlined
           </CustomButton>
         </div>
@@ -60,12 +53,12 @@ const App = () => {
           </CustomButton>
         </div>
         <div>
-        <CustomButton classList={['bwell-btns__primary' ,'bwell-btns__primary-small']}>
-          Primary small
+          <CustomButton classList={['bwell-btns__primary', 'bwell-btns__primary-small']}>
+            Primary small
         </CustomButton>
         </div>
         <div>
-          <CustomButton classList={['bwell-btns__primary' ,'bwell-btns__primary--danger']}>
+          <CustomButton classList={['bwell-btns__primary', 'bwell-btns__primary--danger']}>
             Primary Danger
           </CustomButton>
         </div>
