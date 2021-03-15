@@ -38,33 +38,77 @@ const App = () => {
       </div>
       <div className="buttons">
         <div>
-          <CustomButton classList={['bwell-btns__primary']}>
+          <CustomButton
+            classList={['bwell-btns__primary']} 
+            id="btn-1"
+          >
             Primary
           </CustomButton>
         </div>
         <div>
-          <CustomButton classList={['bwell-btns__primary', 'bwell-btns__primary--outlined']}>
+          <CustomButton
+            classList={['bwell-btns__primary', 'bwell-btns__primary--outlined']}
+            id="btn-2"
+          >
             Primary Outlined
           </CustomButton>
         </div>
         <div>
-          <CustomButton classList={['bwell-btns__secondary']}>
+          <CustomButton
+            classList={['bwell-btns__secondary']}
+            id="btn-3"
+          >
             Secondary
           </CustomButton>
         </div>
         <div>
-          <CustomButton classList={['bwell-btns__primary', 'bwell-btns__primary-small']}>
+          <CustomButton
+            classList={['bwell-btns__primary', 'bwell-btns__primary-small']}
+            id="btn-4"
+          >
             Primary small
         </CustomButton>
         </div>
         <div>
-          <CustomButton classList={['bwell-btns__primary', 'bwell-btns__primary--danger']}>
+          <CustomButton
+            classList={['bwell-btns__primary', 'bwell-btns__primary--danger']}
+            id="btn-5"
+          >
             Primary Danger
           </CustomButton>
         </div>
         <div>
-          <CustomButton classList={['bwell-btns__secondary', 'bwell-btns__secondary-small']}>
+          <CustomButton
+            classList={['bwell-btns__secondary', 'bwell-btns__secondary-small']}
+            id="btn-6"
+          >
             Secondary small
+          </CustomButton>
+        </div>
+        <div>
+          <CustomButton
+            classList={['bwell-btns__primary']}
+            id="btn-7"
+            isDisabled
+          >
+            Primary Disabled
+          </CustomButton>
+        </div>
+        <div>
+          <CustomButton
+            classList={['custom-btn-1']}
+            id="btn-8"
+          >
+            Custom Styled Button
+          </CustomButton>
+        </div>
+        <div>
+          <CustomButton
+            classList={['bwell-btns__secondary']}
+            id="btn-9"
+            isDisabled
+          >
+            Secondary Disabled
           </CustomButton>
         </div>
       </div>

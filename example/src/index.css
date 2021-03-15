@@ -51,7 +51,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ddd;
 }
 
 code {
@@ -65,11 +64,17 @@ code {
   align-items: center;
 }
 
+.all-center select {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
 .buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 10rem 5rem;
+  margin: 7rem 5rem;
 }
 
 .buttons > div {
@@ -78,4 +83,13 @@ code {
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
+}
+
+.custom-btn-1 {
+  border-radius: 10px;
+  background-color: yellow;
+  color: black;
+  font-size: 1.75rem;
+  border: 0;
+  padding: 5px 15px;
 }
